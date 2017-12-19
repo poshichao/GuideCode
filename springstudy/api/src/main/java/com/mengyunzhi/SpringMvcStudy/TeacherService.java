@@ -12,4 +12,10 @@ public interface TeacherService {
      * poshichao
      */
     void update(Long id, Teacher teacher);
+
+    /**
+     * 删除实体
+     * @param id
+     */
+    void delete(Long id);
 }

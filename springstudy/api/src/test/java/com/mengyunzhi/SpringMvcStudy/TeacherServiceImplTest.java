@@ -11,6 +11,7 @@ import static org.assertj.core.api.Assertions.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class TeacherServiceImplTest {
+
     @Autowired
     private TeacherService teacherService;
     @Autowired
@@ -45,4 +46,19 @@ public class TeacherServiceImplTest {
         assertThat(newTeacher.getEmail()).isEqualTo("lisi@yunzhiclub.com");
     }
 
+    @Test
+    public void deleteTest() throws Exception {
+        // 先添加一个数据
+        Teacher teacher = new Teacher();
+        teacherRepository.save(teacher);
+        Long id = teacher.getId();
+
+        // 然后再删除这个数据
+        teacherRepository.delete(id);
+
+        // 断言这个删除成功(查的时候,查不到了)
+        Teacher newTeacher = teacherRepository.findOne(id);
+        assertThat(newTeacher)
+                .isNull();
+    }
 }

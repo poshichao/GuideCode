@@ -31,4 +31,9 @@ public class TeacherServiceImpl implements TeacherService {
         // 更新数据表
         teacherRepository.save(oldTeacher);
     }
+
+    @Override
+    public void delete(Long id) {
+        teacherRepository.delete(id);
+    }
 }

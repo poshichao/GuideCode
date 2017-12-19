@@ -46,6 +46,11 @@ public class TeacherController {
         return;
     }
 
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        teacherService.delete(id);
+    }
+
     static public class HelloWorld {
         private String name;
         private String value;
