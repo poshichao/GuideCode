@@ -1,0 +1,26 @@
+<ui-view>
+    <div class="row">
+        <div class="col-md-2">
+            <a class="btn btn-default" href="#!/main/add" role="button">增加</a>
+        </div>
+    </div>
+    <br>
+    <table class="table">
+        <tr>
+            <th>序号</th>
+            <th>用户名</th>
+            <th>姓名</th>
+            <th>邮箱</th>
+            <th>性别</th>
+            <th>操作</th>
+        </tr>
+        <tr ng-repeat="_list in lists">
+            <td>{{_list.id}}</td>
+            <td>{{_list.username}}</td>
+            <td>{{_list.name}}</td>
+            <td>{{_list.email}}</td>
+            <td>{{_list.sex}}</td>
+            <td><a href="#!/main/view/{{_list.id}}">查看</a>&nbsp;<a href="#!/main/edit/{{_list.id}}">编辑</a></td>
+        </tr>
+    </table>
+</ui-view>

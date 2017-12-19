@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.mengyunzhi.SpringMvcStudy.SpringMvcStudyApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.298 sec - in com.mengyunzhi.SpringMvcStudy.SpringMvcStudyApplicationTests
