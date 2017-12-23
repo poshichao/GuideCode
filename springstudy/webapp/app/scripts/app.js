@@ -53,13 +53,29 @@ angular
         })
 
         .state({
-            name: 'about',
-            url: '/about',
-            controller: 'AboutCtrl',
-            templateUrl: 'views/about.html'
+            name: 'klass',
+            url: '/klass',
+            controller: 'KlassIndexCtrl',
+            templateUrl: 'views/klass/index.html'
+        })
+
+        // 创建一个新的路由
+        .state({
+            name: 'klass.add',   // 继承klass路由，并且声明自己的名字为add
+            url: '/add',        // 相当于 /klass/add，由于继承klass路由
+            controller: 'KlassAddCtrl',   // 控制器名称
+            templateUrl: 'views/klass/add.html'
+        })
+
+        // 创建一个新的路由
+        .state({
+            name: 'klass.edit',   // 继承klass路由，并且声明自己的名字为edit
+            url: '/edit',        // 相当于 /klass/edit，由于继承klass路由
+            controller: 'KlassEditCtrl',   // 控制器名称
+            templateUrl: 'views/klass/edit.html'
         })
 
 
-        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/main');
 
     });

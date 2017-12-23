@@ -1,5 +1,7 @@
-package com.mengyunzhi.SpringMvcStudy;
+package com.mengyunzhi.SpringMvcStudy.controller;
 
+import com.mengyunzhi.SpringMvcStudy.repository.Teacher;
+import com.mengyunzhi.SpringMvcStudy.repository.TeacherRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +27,16 @@ public class TeacherControllerTest {
     private MockMvc mockMvc;
     @Autowired
     private TeacherRepository teacherRepository;
+
+    @Test
+    public void getAllTest() throws Exception {
+        String url = "/Teacher";
+        this.mockMvc
+                .perform(get(url))          // 使用get方法,访问url
+                .andDo(print())             // 打印请求的信息
+                .andExpect(status().isOk());// 断言,请求的状态成功
+    }
+
     @Test
     public void getTest() throws Exception {
         // 创建一个新的教师
@@ -57,7 +69,7 @@ public class TeacherControllerTest {
         teacherRepository.save(teacher);
 
         // 更新这个持久化的Teacher
-        String url = "/Teacher/1";
+        String url = "/Teacher/" + teacher.getId();
         this.mockMvc
                 .perform(put(url)
                         .contentType(MediaType.APPLICATION_JSON_UTF8)

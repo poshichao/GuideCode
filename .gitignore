@@ -45,6 +45,8 @@ Temporary Items
 Webapp/.idea/
 
 api/.idea/
+api/target/
+api/SpringMVCStudy.iml
 sql/
 
 
