@@ -8,7 +8,7 @@
  * 班级管理 增加
  */
 angular.module('testApp')
-    .controller('KlassAddCtrl', function($scope, $http, $state) {
+    .controller('KlassAddCtrl', function($scope, $http, $state, teacher) {
 
         var self = this;
         self.init = function() {
@@ -22,14 +22,9 @@ angular.module('testApp')
 
         // 获取所有的教师
         self.getAllTeachers = function() {
-            var url = 'http://127.0.0.1:8080/Teacher/';
-
-            $http.get(url)
-                .then(function success(response) {
-                    $scope.teachers = response.data;
-                }, function error() {
-                    console.log('error');
-                });
+            teacher.getAllTeachers(function(teachers) {
+                $scope.teachers = teachers;
+            })
         }
 
         // 保存提交

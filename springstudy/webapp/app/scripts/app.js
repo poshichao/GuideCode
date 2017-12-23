@@ -70,7 +70,7 @@ angular
         // 创建一个新的路由
         .state({
             name: 'klass.edit',   // 继承klass路由，并且声明自己的名字为edit
-            url: '/edit',        // 相当于 /klass/edit，由于继承klass路由
+            url: '/edit/:id',        // 相当于 /klass/edit，由于继承klass路由
             controller: 'KlassEditCtrl',   // 控制器名称
             templateUrl: 'views/klass/edit.html'
         })
