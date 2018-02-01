@@ -22,7 +22,7 @@ angular.module('testApp')
     };
 
     self.submit = function() {
-    	var url = 'http://127.0.0.1:8080/Teacher/';
+    	var url = '/Teacher/';
 
     	$http.post(url, $scope.data)
     	.then(function(response) {

@@ -1,4 +1,4 @@
-package com.mengyunzhi.SpringMvcStudy.repository;
+package com.mengyunzhi.SpringMvcStudy.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

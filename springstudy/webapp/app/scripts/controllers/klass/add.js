@@ -17,19 +17,11 @@ angular.module('testApp')
                 teacher: {}
             };
 
-            self.getAllTeachers();
         };
-
-        // 获取所有的教师
-        self.getAllTeachers = function() {
-            teacher.getAllTeachers(function(teachers) {
-                $scope.teachers = teachers;
-            })
-        }
 
         // 保存提交
         self.submit = function() {
-            var url = 'http://127.0.0.1:8080/Klass/';
+            var url = '/Klass/';
 
             $http.post(url, $scope.data)
                 .then(function success(response) {

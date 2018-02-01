@@ -1,15 +1,14 @@
 package com.mengyunzhi.SpringMvcStudy.controller;
 
-import com.mengyunzhi.SpringMvcStudy.repository.Klass;
+import com.mengyunzhi.SpringMvcStudy.entity.Klass;
 import com.mengyunzhi.SpringMvcStudy.repository.KlassRepository;
+import org.apache.log4j.Logger;
+import org.assertj.core.api.AssertionsForClassTypes;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -22,10 +21,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * @author poshichao
  */
-@RunWith(SpringRunner.class)
-@SpringBootTest
-@AutoConfigureMockMvc
-public class KlassControllerTest {
+public class KlassControllerTest extends ControllerTest {
+    private final static Logger logger = Logger.getLogger(KlassControllerTest.class.getName());
     static final String url = "/Klass/";
 
     @Autowired
@@ -65,7 +62,7 @@ public class KlassControllerTest {
         klassRepository.save(klass);
 
         // 获取这个班级,并断言就是持久化的班级
-        String getUrl = "/Klass/" + klass.getId().toString();
+        String getUrl = url + klass.getId().toString();
 
         this.mockMvc
                 .perform(get(getUrl)
@@ -95,6 +92,24 @@ public class KlassControllerTest {
         // 断言更新成功(从数据库中查找这个实体对象,获取他的name,并看是否更新成功)
         Klass newKlass = klassRepository.findOne(klass.getId());
         assertThat(newKlass.getName()).isEqualTo("123");
+    }
+
+    @Test
+    public void deleteTest() throws Exception {
+        logger.info("new 一个对象");
+        Klass klass = new Klass();
+        klassRepository.save(klass);
+
+        String deleteUrl = url + klass.getId().toString();
+        logger.info("调用C层的delete方法");
+        this.mockMvc
+                .perform(MockMvcRequestBuilders.delete(deleteUrl)
+                .header("content-type", MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(status().is(204));
+
+        logger.info("断言是否删除成功");
+        Klass newKlass = klassRepository.findOne(klass.getId());
+        AssertionsForClassTypes.assertThat(newKlass).isNull();
     }
 
 }

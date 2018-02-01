@@ -13,15 +13,4 @@ public class SpringMvcStudyApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringMvcStudyApplication.class, args);
 	}
-
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurerAdapter() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("http://localhost:9000")
-				.allowedMethods("GET", "POST", "DELETE", "PUT", "PATCH", "OPTIONS");
-			}
-		};
-	}
 }

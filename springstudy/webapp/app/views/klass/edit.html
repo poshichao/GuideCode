@@ -9,11 +9,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="username" class="col-sm-2 control-label">名称</label>
-                <div class="col-md-10">
-                	<!-- 以 teacher.name 显示, 以 teacher.id 判等 -->
-                    <select name="teacherId" id="teacherId" ng-options="_teacher.name for _teacher in teachers track by _teacher.id" ng-model="data.teacher"></select>
-                </div>
+                <yunzhi-teacher-list></yunzhi-teacher-list>
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">

@@ -8,32 +8,22 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-    .controller('MainCtrl', function ($scope, $http) {
+    .controller('MainCtrl', function ($scope, $http, teacher) {
         var self = this;
-        var url = 'http://127.0.0.1:8080/Teacher';
+        var url = '/Teacher';
 
-        var success = function(response) {
-            $scope.lists = response.data;
-            console.log('success');
-        }
+        $http.get(url)
+            .then(function success(response) {
+                $scope.lists = response.data;
+                console.log('success');
+            }, function error() {
+                console.log('error');
+            })
 
-        var error = function() {
-            console.log('error');
-        }
-
-        var promise = $http.get(url);
-
-        promise.then(success, error);
-
-        self.delete = function(teacher) {
-            var url = 'http://127.0.0.1:8080/Teacher/' + teacher.id;
-            $http.delete(url)
-                .then(function success() {
-                    console.log('数据删除成功!');
-                }, function error() {
-                    console.log('error');
-                });
-            console.log();
+        self.delete = function(object) {
+            teacher.delete(object, function() {
+                object._delete = true;
+            })
         };
 
         $scope.delete = self.delete;

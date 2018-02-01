@@ -15,7 +15,7 @@ angular.module('testApp')
         self.init = function() {
             // 接收ID,然后使用ID获取我们想要编辑的实体
             var id = $stateParams.id;
-            var url = 'http://127.0.0.1:8080/Teacher/' + id;
+            var url = '/Teacher/' + id;
             $http.get(url)
                 .then(function success(response) {
                     $scope.data = response.data;
@@ -28,7 +28,7 @@ angular.module('testApp')
 
         self.submit = function() {
             var id = $stateParams.id;
-            var url = 'http://127.0.0.1:8080/Teacher/' + id;
+            var url = '/Teacher/' + id;
             $http.put(url, $scope.data)
                 .then(function success(response) {
                     console.log('数据更新成功');

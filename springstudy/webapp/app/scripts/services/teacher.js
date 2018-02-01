@@ -8,13 +8,11 @@
  * Service in the testApp.
  */
 angular.module('testApp')
-  .service('teacher', function ($http) {
-    // AngularJS will instantiate a singleton by calling "new" on this function
+    .service('teacher', function($http) {
+        var self = this;
 
-    var self = this;
-
-    self.getAllTeachers = function(callback) {
-    	var url = 'http://127.0.0.1:8080/Teacher/';
+        self.getAllTeachers = function(callback) {
+            var url = '/Teacher/';
 
             $http.get(url)
                 .then(function success(response) {
@@ -22,9 +20,22 @@ angular.module('testApp')
                 }, function error() {
                     console.log('error');
                 });
-    };
+        };
 
-    return {
-    	getAllTeachers: self.getAllTeachers
-    };
-  });
+        self.delete = function(object, callback) {
+            var url = '/Teacher/' + object.id;
+            $http.delete(url)
+                .then(function success() {
+                    if (callback) {
+                        callback(object);
+                    }
+                }, function error() {
+                    console.log('删除失败!');
+                });
+        };
+
+        return {
+            getAllTeachers: self.getAllTeachers,
+            delete: self.delete
+        };
+    });

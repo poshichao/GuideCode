@@ -1,6 +1,8 @@
 /home/poshichao/project/GuideCode/springstudy/api/src/test/java/com/mengyunzhi/SpringMvcStudy/controller/KlassControllerTest.java
+/home/poshichao/project/GuideCode/springstudy/api/src/test/java/com/mengyunzhi/SpringMvcStudy/controller/ControllerTest.java
 /home/poshichao/project/GuideCode/springstudy/api/src/test/java/com/mengyunzhi/SpringMvcStudy/service/KlassServiceImplTest.java
 /home/poshichao/project/GuideCode/springstudy/api/src/test/java/com/mengyunzhi/SpringMvcStudy/controller/TeacherControllerTest.java
 /home/poshichao/project/GuideCode/springstudy/api/src/test/java/com/mengyunzhi/SpringMvcStudy/SpringMvcStudyApplicationTests.java
 /home/poshichao/project/GuideCode/springstudy/api/src/test/java/com/mengyunzhi/SpringMvcStudy/repository/KlassRepositoryTest.java
+/home/poshichao/project/GuideCode/springstudy/api/src/test/java/com/mengyunzhi/SpringMvcStudy/service/ServiceTest.java
 /home/poshichao/project/GuideCode/springstudy/api/src/test/java/com/mengyunzhi/SpringMvcStudy/service/TeacherServiceImplTest.java

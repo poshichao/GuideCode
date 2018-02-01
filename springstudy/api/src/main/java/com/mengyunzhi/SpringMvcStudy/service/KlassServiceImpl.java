@@ -1,6 +1,6 @@
 package com.mengyunzhi.SpringMvcStudy.service;
 
-import com.mengyunzhi.SpringMvcStudy.repository.Klass;
+import com.mengyunzhi.SpringMvcStudy.entity.Klass;
 import com.mengyunzhi.SpringMvcStudy.repository.KlassRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,6 +27,11 @@ public class KlassServiceImpl implements KlassService {
     @Override
     public Klass getById(Long id) {
         return klassRepository.findOne(id);
+    }
+
+    @Override
+    public void delete(Long id) {
+        klassRepository.delete(id);
     }
 
     @Override

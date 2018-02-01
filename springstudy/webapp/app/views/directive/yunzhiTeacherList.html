@@ -1,0 +1,8 @@
+<!-- this is views/directive/yunzhiTeacherList.html -->
+<div class="form-group">
+    <label for="username" class="col-sm-2 control-label">教师</label>
+    <div class="col-md-10">
+        <!-- 以 teacher.name 显示, 以 teacher.id 排序 -->
+        <select name="teacherId" id="teacherId" ng-options="_teacher.name for _teacher in teachers track by _teacher.id" ng-model="data.teacher"></select>
+    </div>
+</div>

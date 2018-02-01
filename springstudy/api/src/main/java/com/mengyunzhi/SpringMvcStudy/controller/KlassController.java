@@ -1,6 +1,6 @@
 package com.mengyunzhi.SpringMvcStudy.controller;
 
-import com.mengyunzhi.SpringMvcStudy.repository.Klass;
+import com.mengyunzhi.SpringMvcStudy.entity.Klass;
 import com.mengyunzhi.SpringMvcStudy.service.KlassService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -36,4 +36,10 @@ public class KlassController {
     public void update(@PathVariable Long id, @RequestBody Klass newKlass) {
         klassService.updateByIdAndKlass(id, newKlass);
     }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void delete(@PathVariable Long id) {
+        klassService.delete(id);
+    };
 }

@@ -1,6 +1,6 @@
 package com.mengyunzhi.SpringMvcStudy.service;
 
-import com.mengyunzhi.SpringMvcStudy.repository.Teacher;
+import com.mengyunzhi.SpringMvcStudy.entity.Teacher;
 
 /**
  * 教师

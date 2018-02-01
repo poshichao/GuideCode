@@ -1,6 +1,6 @@
 package com.mengyunzhi.SpringMvcStudy.service;
 
-import com.mengyunzhi.SpringMvcStudy.repository.Klass;
+import com.mengyunzhi.SpringMvcStudy.entity.Klass;
 
 /**
  * @author poshichao
@@ -17,7 +17,7 @@ public interface KlassService {
     Iterable<Klass> getAll();
 
     Klass getById(Long id);
-
+    void delete(Long id);
 
     void updateByIdAndKlass(Long id, Klass newKlass);
 }

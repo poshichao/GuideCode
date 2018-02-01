@@ -5,7 +5,7 @@
  * @name testApp.controller:KlassEditCtrl
  * @description
  * # KlassEditCtrl
- * Controller of the testApp
+ * 班级管理 编辑
  */
 angular.module('testApp')
     .controller('KlassEditCtrl', function($scope, $http, $stateParams, $state, teacher) {
@@ -13,7 +13,7 @@ angular.module('testApp')
 
         self.init = function() {
             var id = $stateParams.id;
-            var url = 'http://127.0.0.1:8080/Klass/' + id;
+            var url = '/Klass/' + id;
 
             $http.get(url)
                 .then(function success(response) {
@@ -22,20 +22,12 @@ angular.module('testApp')
                 }, function error(response) {
                     console.log('error ' + url, response);
                 });
-            self.getAllTeachers();
         };
-
-        // 获取所有的教师
-        self.getAllTeachers = function() {
-            teacher.getAllTeachers(function(teachers) {
-                $scope.teachers = teachers;
-            })
-        }
 
         // 保存提交
         self.submit = function() {
             var id = $stateParams.id;
-            var url = 'http://127.0.0.1:8080/Klass/' + id;
+            var url = '/Klass/' + id;
 
             $http.put(url, $scope.data)
                 .then(function success(response) {

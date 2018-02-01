@@ -1,11 +1,12 @@
+/home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/config/WebMvcConfig.java
 /home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/controller/KlassController.java
+/home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/entity/Teacher.java
 /home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/SpringMvcStudyApplication.java
 /home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/service/TeacherService.java
-/home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/repository/Teacher.java
 /home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/service/KlassService.java
 /home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/repository/TeacherRepository.java
 /home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/service/TeacherServiceImpl.java
 /home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/controller/TeacherController.java
 /home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/repository/KlassRepository.java
-/home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/repository/Klass.java
 /home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/service/KlassServiceImpl.java
+/home/poshichao/project/GuideCode/springstudy/api/src/main/java/com/mengyunzhi/SpringMvcStudy/entity/Klass.java
