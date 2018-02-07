@@ -1,0 +1,15 @@
+<nav aria-label="Page navigation" class="text-right">
+    <ul class="pagination">
+        <li ng-class="{'disabled': first}">
+            <a href="javascript: void(0);" aria-label="Previous" ng-click="changePage(1)">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li ng-repeat="page in pages" ng-class="{'active': isActive(page)}"><a href="javascript: void(0);" ng-click="changePage(page)">{{page}}</a></li>
+        <li ng-class="{'disabled': last}" >
+            <a href="javascript: void(0);" aria-label="Next" ng-click="changePage(totalPages )">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>

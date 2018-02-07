@@ -3,8 +3,11 @@ package com.mengyunzhi.SpringMvcStudy.service;
 import com.mengyunzhi.SpringMvcStudy.entity.Klass;
 import com.mengyunzhi.SpringMvcStudy.repository.KlassRepository;
 import org.apache.log4j.Logger;
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 
 import java.util.List;
 
@@ -65,4 +68,10 @@ public class KlassServiceImplTest extends ServiceTest {
         assertThat(newKlass).isNull();
     }
 
+    @Test
+    public void page() throws Exception {
+        PageRequest pageRequest = new PageRequest(0, 2);
+        Page<Klass> klasses = klassService.page(pageRequest);
+        Assertions.assertThat(klasses.getTotalElements()).isGreaterThanOrEqualTo(0);
+    }
 }

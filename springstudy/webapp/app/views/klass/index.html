@@ -5,7 +5,7 @@
             <a class="btn btn-default" href="#!/klass/add" role="button">增加</a>
         </div>
     </div>
-    <br />
+    <br/>
     <table class="table">
         <tr>
             <th>序号</th>
@@ -13,7 +13,7 @@
             <th>教师</th>
             <th>操作</th>
         </tr>
-        <tr ng-repeat="_list in lists | orderBy: '-id' " ng-hide = "_list._delete">
+        <tr ng-repeat="_list in data.content | orderBy: '-id' " ng-hide="_list._delete">
             <td>{{$index + 1}}</td>
             <td>{{_list.name}}</td>
             <td>{{_list.teacher.name}}</td>
@@ -23,4 +23,5 @@
             </td>
         </tr>
     </table>
+    <yunzhi-page data-total-pages="data.totalPages" data-number="data.number" data-first="data.first" data-last="data.last" data-reload="reload"></yunzhi-page>
 </ui-view>

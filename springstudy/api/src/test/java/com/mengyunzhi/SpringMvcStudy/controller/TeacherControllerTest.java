@@ -15,6 +15,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 public class TeacherControllerTest extends ControllerTest {
+    final static String url = "/Teacher/";
 
     @Autowired
     private MockMvc mockMvc;
@@ -23,7 +24,6 @@ public class TeacherControllerTest extends ControllerTest {
 
     @Test
     public void getAllTest() throws Exception {
-        String url = "/Teacher";
         this.mockMvc
                 .perform(get(url))          // 使用get方法,访问url
                 .andDo(print())             // 打印请求的信息
@@ -45,11 +45,11 @@ public class TeacherControllerTest extends ControllerTest {
         teacherRepository.save(teacher);
 
         // 拼接url
-        String url = "/Teacher/" + String.valueOf(teacher.getId());
+        String getUrl = url + String.valueOf(teacher.getId());
 
         // 根据url进行get请求，并断言
         this.mockMvc
-                .perform(get(url))
+                .perform(get(getUrl))
                 .andDo(print())
                 .andExpect(status().isOk());
     }
@@ -62,9 +62,9 @@ public class TeacherControllerTest extends ControllerTest {
         teacherRepository.save(teacher);
 
         // 更新这个持久化的Teacher
-        String url = "/Teacher/" + teacher.getId();
+        String updateUrl = url + teacher.getId();
         this.mockMvc
-                .perform(put(url)
+                .perform(put(updateUrl)
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .content("{}"))         // put方法来请求这个路由
                 .andDo(print())                 // 请求后,打印这个数据
@@ -79,9 +79,9 @@ public class TeacherControllerTest extends ControllerTest {
         Long id = teacher.getId();
 
         // 然后再删除这个数据
-        String url = "/Teacher/" + id;
+        String deleteUrl = url + id;
         this.mockMvc
-            .perform(delete(url)
+            .perform(delete(deleteUrl)
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
             .andDo(print())                 // 请求,打印返回信息
             .andExpect(status().isOk());    // 断言返回状态为真

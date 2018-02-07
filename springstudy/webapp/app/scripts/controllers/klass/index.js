@@ -8,27 +8,25 @@
  * 班级管理 首页
  */
 angular.module('testApp')
-    .controller('KlassIndexCtrl', function($scope, $http, klass) {
+    .controller('KlassIndexCtrl', function ($scope, $http, klass) {
         var self = this;
+        var page = 0;
 
         // 初始化班级信息
-        self.init = function() {
-            var url = '/Klass/';
-            $http.get(url)
-            .then(function success(response) {
-                $scope.lists = response.data;
-            }, function error() {
-                console.log('请求教师列表发生错误');
+        self.init = function (page) {
+            klass.page(page, 3, function (data) {
+                $scope.data = data;
             });
-        }
+        };
 
         // 删除
-        self.delete = function(object) {
-            klass.delete(object, function() {
+        self.delete = function (object) {
+            klass.delete(object, function () {
                 object._delete = true;
             })
         };
 
-        self.init();
+        self.init(page);
         $scope.delete = self.delete;
+        $scope.reload = self.init;
     });

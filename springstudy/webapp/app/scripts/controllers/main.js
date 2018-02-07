@@ -15,7 +15,6 @@ angular.module('testApp')
         $http.get(url)
             .then(function success(response) {
                 $scope.lists = response.data;
-                console.log('success');
             }, function error() {
                 console.log('error');
             })

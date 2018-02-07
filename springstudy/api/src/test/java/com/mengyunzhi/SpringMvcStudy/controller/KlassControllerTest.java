@@ -34,8 +34,8 @@ public class KlassControllerTest extends ControllerTest {
     public void saveTest() throws Exception {
         this.mockMvc
                 .perform(post(url)
-                    .content("{}")
-                    .header("content-type", MediaType.APPLICATION_JSON_UTF8))
+                        .content("{}")
+                        .header("content-type", MediaType.APPLICATION_JSON_UTF8))
                 .andDo(print())
                 .andExpect(status().is(201));
     }
@@ -47,6 +47,20 @@ public class KlassControllerTest extends ControllerTest {
                         .header("content-type", MediaType.APPLICATION_JSON_UTF8))
                 .andDo(print())
                 .andExpect(status().isOk());
+    }
+
+    @Test
+    public void page() throws Exception {
+        String pageUrl = url + "page";
+        this.mockMvc
+                .perform(get(pageUrl)
+                        .header("content-type", MediaType.APPLICATION_JSON_UTF8)
+                        .param("page", "0")
+                        .param("size", "2"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.totalElements").isNumber())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.number").value(0));
     }
 
     @Test
@@ -85,8 +99,8 @@ public class KlassControllerTest extends ControllerTest {
         String putUrl = "/Klass/" + klass.getId().toString();
         this.mockMvc
                 .perform(put(putUrl)
-                    .header("content-type", MediaType.APPLICATION_JSON_UTF8)
-                    .content("{\"name\":\"" + newName + "\"}"))
+                        .header("content-type", MediaType.APPLICATION_JSON_UTF8)
+                        .content("{\"name\":\"" + newName + "\"}"))
                 .andExpect(status().isOk());
 
         // 断言更新成功(从数据库中查找这个实体对象,获取他的name,并看是否更新成功)
@@ -104,7 +118,7 @@ public class KlassControllerTest extends ControllerTest {
         logger.info("调用C层的delete方法");
         this.mockMvc
                 .perform(MockMvcRequestBuilders.delete(deleteUrl)
-                .header("content-type", MediaType.APPLICATION_JSON_UTF8))
+                        .header("content-type", MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().is(204));
 
         logger.info("断言是否删除成功");
