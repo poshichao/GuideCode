@@ -29,8 +29,8 @@ angular.module('testApp')
                     if (callback) {
                         callback(object);
                     }
-                }, function error() {
-                    console.log('删除失败!');
+                }, function error(response) {
+                    console.log('删除失败!', response);
                 });
         };
 

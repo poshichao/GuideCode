@@ -25,14 +25,14 @@ public class TeacherControllerTest extends ControllerTest {
     @Test
     public void getAllTest() throws Exception {
         this.mockMvc
-                .perform(get(url))          // 使用get方法,访问url
-                .andDo(print())             // 打印请求的信息
-                .andExpect(status().isOk());// 断言,请求的状态成功
+                .perform(get(url))              // 使用get方法,访问url
+                .andDo(print())                 // 打印请求信息
+                .andExpect(status().isOk());    // 断言,请求成功
     }
 
     @Test
     public void getTest() throws Exception {
-        // 创建一个新的教师
+        // 创建一个教师
         Teacher teacher = new Teacher();
 
         // 为教师赋值
@@ -47,49 +47,50 @@ public class TeacherControllerTest extends ControllerTest {
         // 拼接url
         String getUrl = url + String.valueOf(teacher.getId());
 
-        // 根据url进行get请求，并断言
+        // 调用get方法并断言
         this.mockMvc
                 .perform(get(getUrl))
-                .andDo(print())
                 .andExpect(status().isOk());
     }
 
     @Test
     public void updateTest() throws Exception {
         // 添加测试数据
-        // 实例化一个Teacher,并持久化
         Teacher teacher = new Teacher();
+
+        // 将数据持久化
         teacherRepository.save(teacher);
 
-        // 更新这个持久化的Teacher
-        String updateUrl = url + teacher.getId();
+        // 拼接url
+        // String updateUrl = url + teacher.getId().toString() 同下;
+        String updateUrl = url + String.valueOf(teacher.getId());
+
+        // 调用update方法更新数据
         this.mockMvc
                 .perform(put(updateUrl)
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
-                        .content("{}"))         // put方法来请求这个路由
-                .andDo(print())                 // 请求后,打印这个数据
-                .andExpect(status().isOk());    // 断言返回状态为真
+                        .content("{}"))         // 调用put方法,模拟更新数据
+                .andDo(print())
+                .andExpect(status().isOk());    // 断言返回状态成功
     }
 
     @Test
     public void deleteTest() throws Exception {
-        // 先添加一个数据
+        // 添加一个数据
         Teacher teacher = new Teacher();
         teacherRepository.save(teacher);
         Long id = teacher.getId();
 
-        // 然后再删除这个数据
-        String deleteUrl = url + id;
+        // 删除这个数据
+        String deleteUrl = url + String.valueOf(id);
         this.mockMvc
-            .perform(delete(deleteUrl)
-                .contentType(MediaType.APPLICATION_JSON_UTF8))
-            .andDo(print())                 // 请求,打印返回信息
-            .andExpect(status().isOk());    // 断言返回状态为真
+                .perform(delete(deleteUrl)
+                        .contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(status().isOk());
 
-        // 断言这个删除成功了
+        // 断言删除成功
         Teacher newTeacher = teacherRepository.findOne(id);
         assertThat(newTeacher).isNull();
-
     }
 
 }

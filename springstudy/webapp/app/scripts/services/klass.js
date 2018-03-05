@@ -12,19 +12,12 @@ angular.module('testApp')
 
         /**
          * 分页
-         * @param page      第几页
-         * @param size      每页大小
+         * @param params    查询参数{page: 页数, size: 大小}
          * @param callback
          * poshichao
          */
-        self.page = function (page, size, callback) {
+        self.page = function (params, callback) {
             var url = '/Klass/page';
-
-            // 定义参数
-            var params = {
-                page: page,
-                size: size
-            };
 
             // 使用参数发起get请求
             $http.get(url, {params: params})

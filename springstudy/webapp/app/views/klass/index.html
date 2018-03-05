@@ -6,6 +6,10 @@
         </div>
     </div>
     <br/>
+    <hr>
+    <p>
+        <yunzhi-size ng-model="params.size" data-reload="reloadBySize"></yunzhi-size>
+    </p>
     <table class="table">
         <tr>
             <th>序号</th>
@@ -23,5 +27,6 @@
             </td>
         </tr>
     </table>
-    <yunzhi-page data-total-pages="data.totalPages" data-number="data.number" data-first="data.first" data-last="data.last" data-reload="reload"></yunzhi-page>
+    <yunzhi-page data-total-pages="data.totalPages" data-number="data.number" data-first="data.first"
+                 data-last="data.last" data-reload="reloadByPage"></yunzhi-page>
 </ui-view>

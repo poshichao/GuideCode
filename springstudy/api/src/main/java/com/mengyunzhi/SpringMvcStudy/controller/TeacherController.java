@@ -14,9 +14,18 @@ public class TeacherController {
     @Autowired
     private TeacherService teacherService;      // 教师
 
-    @GetMapping("")
+    @RequestMapping("/helloWorld")
+    public HelloWorld helloWorld() {
+        HelloWorld helloWorld = new HelloWorld();
+        helloWorld.setName("this is name");
+        helloWorld.setValue("this is value");
+        return helloWorld;
+    }
+
+    // 获取所有信息
+    @GetMapping("/")
     public Iterable<Teacher> getAll() {
-        Iterable teachers = teacherRepository.findAll();
+        Iterable<Teacher> teachers = teacherRepository.findAll();
         return teachers;
     }
 
@@ -25,14 +34,6 @@ public class TeacherController {
     public Teacher save(@RequestBody Teacher teacher) {
         teacherRepository.save(teacher);
         return teacher;
-    }
-
-    @RequestMapping("/helloWorld")
-    public HelloWorld helloWorld() {
-        HelloWorld helloWorld = new HelloWorld();
-        helloWorld.setName("this is name");
-        helloWorld.setValue("this is value");
-        return helloWorld;
     }
 
     // 使用{id} 来说明，将/Teacher/xxxx中的xxxx命名为id
@@ -44,9 +45,8 @@ public class TeacherController {
 
     // 定义一个put路由来更新数据
     @PutMapping("/{id}")
-    public void update(@RequestBody Teacher teacher, @PathVariable Long id) {
+    public void update(@PathVariable Long id, @RequestBody Teacher teacher) {
         teacherService.update(id, teacher);
-        return;
     }
 
     @DeleteMapping("/{id}")

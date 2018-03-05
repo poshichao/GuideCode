@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.mengyunzhi.SpringMvcStudy.controller.TeacherControllerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.249 sec - in com.mengyunzhi.SpringMvcStudy.controller.TeacherControllerTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.238 sec - in com.mengyunzhi.SpringMvcStudy.controller.TeacherControllerTest

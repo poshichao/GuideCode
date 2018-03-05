@@ -10,25 +10,25 @@ angular.module('testApp')
     .directive('yunzhiPage', function () {
         return {
             scope: {
-                number: '=',        // 代表对应前台的data-number
-                totalPages: '=',     // 代表对应前台的data-totalPages
+                number: '=',            // 代表对应前台的data-number,当前页码
+                totalPages: '=',        // 代表对应前台的data-totalPages,总页数
                 first: '=',
                 last: '=',
-                reload: '='         // 点击切换页数时触发的方法
+                reload: '='             // 点击切换页数时触发的方法
             },
 
             templateUrl: 'views/directive/yunzhiPage.html',
             restrict: 'E',
             link: function postLink(scope) {
                 var self = this;
-                self.maxPageCount = 5;
+                self.maxPageCount = 5;      // 初始化显示最大分页数
 
                 self.init = function () {
                     // 监听number
                     scope.$watch('number', self.watchNumber);
                 };
 
-                // 获取一般页数的信息
+                // 获取一半页数的信息
                 self.getHalfMaxPageCount = function () {
                     return Math.floor(self.maxPageCount / 2);
                 };
@@ -36,9 +36,9 @@ angular.module('testApp')
                 // 生成分页信息
                 self.generatePage = function (number, maxPageCount, totalPages) {
                     var pages = [];
-                    var page = number + 1;
-                    var beginPage = 1;
-                    var endPage = maxPageCount;
+                    var page = number + 1;      // 当前页
+                    var beginPage = 1;          // 开始页
+                    var endPage = maxPageCount; // 结束页
                     var halfMaxPageCount = self.getHalfMaxPageCount();
 
                     // 判断是否不是前面的几页

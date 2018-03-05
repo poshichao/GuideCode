@@ -10,19 +10,17 @@
 angular.module('testApp')
     .controller('MainViewCtrl', function($scope, $http, $stateParams) {
         var self = this;
-        self.init = function() {
 
-            var id = $stateParams.id;
-            var url = '/Teacher/' + id;
+        // 初始化获取当前对象
+        self.init = function() {
+            var url = '/Teacher/' + $stateParams.id;
+
             $http.get(url)
                 .then(function success(response) {
                     $scope.data = response.data;
                 }, function error(response) {
-                    console.log(url + 'error');
-                    console.log(response);
-                })
+                    console.log('error', response);
+                });
         };
-
         self.init();
-
     });

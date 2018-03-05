@@ -12,31 +12,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="KlassControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/mengyunzhi/SpringMvcStudy/controller/KlassControllerTest.java">
+      <file leaf-file-name="TeacherController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/controller/TeacherController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+            <state relative-caret-position="1334">
+              <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+              <folding>
+                <element signature="e#1615#1616#0" expanded="true" />
+                <element signature="e#1656#1657#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Klass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/entity/Klass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/mengyunzhi/SpringMvcStudy/controller/ControllerTest.java">
+      <file leaf-file-name="Teacher.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/entity/Teacher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherControllerTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/mengyunzhi/SpringMvcStudy/controller/TeacherControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+            <state relative-caret-position="-232">
+              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -76,6 +79,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/controller/KlassController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mengyunzhi/SpringMvcStudy/controller/KlassControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mengyunzhi/SpringMvcStudy/controller/TeacherControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/controller/TeacherController.java" />
       </list>
     </option>
   </component>
@@ -106,6 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,6 +161,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="SpringMvcStudy" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMvcStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringMvcStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringMvcStudy" type="b2602c69:ProjectViewProjectNode" />
@@ -216,9 +230,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -227,7 +240,7 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelWidth1" value="75" />
@@ -258,107 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TeacherControllerTest">
-    <configuration name="KlassControllerTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.mengyunzhi.SpringMvcStudy.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SpringMvcStudy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.mengyunzhi.SpringMvcStudy.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.mengyunzhi.SpringMvcStudy.controller.KlassControllerTest" />
-      <option name="METHOD_NAME" value="deleteTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="KlassControllerTest.page" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.mengyunzhi.SpringMvcStudy.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SpringMvcStudy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.mengyunzhi.SpringMvcStudy.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.mengyunzhi.SpringMvcStudy.controller.KlassControllerTest" />
-      <option name="METHOD_NAME" value="page" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="KlassRepositoryTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.mengyunzhi.SpringMvcStudy.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SpringMvcStudy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.mengyunzhi.SpringMvcStudy.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.mengyunzhi.SpringMvcStudy.repository.KlassRepositoryTest" />
-      <option name="METHOD_NAME" value="findAllTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="KlassServiceImplTest.page" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.mengyunzhi.SpringMvcStudy.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SpringMvcStudy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.mengyunzhi.SpringMvcStudy.service" />
-      <option name="MAIN_CLASS_NAME" value="com.mengyunzhi.SpringMvcStudy.service.KlassServiceImplTest" />
-      <option name="METHOD_NAME" value="page" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.SpringMvcStudyApplication">
     <configuration name="SpringMvcStudyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mengyunzhi.SpringMvcStudy.SpringMvcStudyApplication" />
@@ -379,6 +292,106 @@
       <option name="MAIN_CLASS_NAME" value="com.mengyunzhi.SpringMvcStudy.controller.TeacherControllerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TeacherControllerTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.mengyunzhi.SpringMvcStudy.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SpringMvcStudy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.mengyunzhi.SpringMvcStudy.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.mengyunzhi.SpringMvcStudy.controller.TeacherControllerTest" />
+      <option name="METHOD_NAME" value="deleteTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TeacherControllerTest.getAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.mengyunzhi.SpringMvcStudy.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SpringMvcStudy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.mengyunzhi.SpringMvcStudy.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.mengyunzhi.SpringMvcStudy.controller.TeacherControllerTest" />
+      <option name="METHOD_NAME" value="getAllTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TeacherControllerTest.getTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.mengyunzhi.SpringMvcStudy.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SpringMvcStudy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.mengyunzhi.SpringMvcStudy.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.mengyunzhi.SpringMvcStudy.controller.TeacherControllerTest" />
+      <option name="METHOD_NAME" value="getTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TeacherControllerTest.updateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.mengyunzhi.SpringMvcStudy.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SpringMvcStudy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.mengyunzhi.SpringMvcStudy.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.mengyunzhi.SpringMvcStudy.controller.TeacherControllerTest" />
+      <option name="METHOD_NAME" value="updateTest" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -473,19 +486,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.SpringMvcStudyApplication" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.KlassControllerTest.deleteTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.KlassControllerTest.page" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.KlassRepositoryTest.findAllTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.KlassServiceImplTest.page" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest.getAllTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest.getTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest.updateTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest.deleteTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.KlassControllerTest.page" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.KlassServiceImplTest.page" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.KlassRepositoryTest.findAllTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.KlassControllerTest.deleteTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest.deleteTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest.updateTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest.getTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest.getAllTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TeacherControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -510,44 +523,51 @@
       <workItem from="1517404589882" duration="764000" />
       <workItem from="1517830699442" duration="3712000" />
       <workItem from="1517835297334" duration="1504000" />
-      <workItem from="1517996289739" duration="1835000" />
+      <workItem from="1517996289739" duration="6351000" />
+      <workItem from="1518008375251" duration="68000" />
+      <workItem from="1518090392070" duration="1798000" />
+      <workItem from="1518265220086" duration="1355000" />
+      <workItem from="1518435182783" duration="760000" />
+      <workItem from="1518608477785" duration="718000" />
+      <workItem from="1520162223928" duration="673000" />
+      <workItem from="1520218266419" duration="272000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KlassControllerTest_page - 2018.02.05 at 20h 35m 03s.xml">
-      <configuration name="KlassControllerTest.page" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KlassControllerTest_page - 2018.02.05 at 20h 35m 24s.xml">
-      <configuration name="KlassControllerTest.page" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KlassControllerTest_page - 2018.02.05 at 20h 37m 39s.xml">
-      <configuration name="KlassControllerTest.page" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KlassControllerTest_page - 2018.02.05 at 20h 38m 46s.xml">
-      <configuration name="KlassControllerTest.page" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KlassControllerTest_page - 2018.02.05 at 21h 01m 45s.xml">
-      <configuration name="KlassControllerTest.page" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KlassRepositoryTest_findAllTest - 2018.02.05 at 20h 05m 10s.xml">
-      <configuration name="KlassRepositoryTest.findAllTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KlassRepositoryTest_findAllTest - 2018.02.05 at 20h 05m 35s.xml">
-      <configuration name="KlassRepositoryTest.findAllTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KlassServiceImplTest_page - 2018.02.05 at 20h 22m 04s.xml">
-      <configuration name="KlassServiceImplTest.page" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeacherControllerTest - 2018.02.07 at 19h 27m 43s.xml">
-      <configuration name="TeacherControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TeacherControllerTest - 2018.02.07 at 19h 28m 38s.xml">
       <configuration name="TeacherControllerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TeacherControllerTest_deleteTest - 2018.02.07 at 20h 31m 32s.xml">
+      <configuration name="TeacherControllerTest.deleteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeacherControllerTest_deleteTest - 2018.02.07 at 20h 32m 19s.xml">
+      <configuration name="TeacherControllerTest.deleteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeacherControllerTest_deleteTest - 2018.02.07 at 20h 33m 39s.xml">
+      <configuration name="TeacherControllerTest.deleteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeacherControllerTest_getAllTest - 2018.02.07 at 19h 35m 33s.xml">
+      <configuration name="TeacherControllerTest.getAllTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeacherControllerTest_getTest - 2018.02.07 at 19h 43m 21s.xml">
+      <configuration name="TeacherControllerTest.getTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeacherControllerTest_updateTest - 2018.02.07 at 19h 51m 28s.xml">
+      <configuration name="TeacherControllerTest.updateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeacherControllerTest_updateTest - 2018.02.07 at 19h 51m 29s.xml">
+      <configuration name="TeacherControllerTest.updateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeacherControllerTest_updateTest - 2018.02.07 at 19h 51m 40s.xml">
+      <configuration name="TeacherControllerTest.updateTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TeacherControllerTest_updateTest - 2018.02.07 at 19h 57m 40s.xml">
+      <configuration name="TeacherControllerTest.updateTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26405000" />
+    <option name="totallyTimeSpent" value="36565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
@@ -562,12 +582,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4581498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32378855" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19731183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22096774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -592,36 +612,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mengyunzhi/SpringMvcStudy/controller/KlassControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/SpringMvcStudyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#546#547#0" expanded="false" />
-            <element signature="e#613#614#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -649,7 +650,7 @@
         <state relative-caret-position="116">
           <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -777,27 +778,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/entity/Klass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/entity/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/config/Webconfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -831,13 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.9.RELEASE/spring-data-jpa-1.11.9.RELEASE.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="239" column="19" lean-forward="false" selection-start-line="239" selection-start-column="19" selection-end-line="239" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -939,16 +919,15 @@
         <state relative-caret-position="754">
           <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/controller/TeacherController.java">
+    <entry file="jar:///opt/java/jdk1.8.0_151/src.zip!/java/lang/Long.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="231">
+          <caret line="392" column="25" lean-forward="false" selection-start-line="392" selection-start-column="25" selection-end-line="392" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -962,16 +941,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mengyunzhi/SpringMvcStudy/controller/KlassControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        <state relative-caret-position="-116">
+          <caret line="36" column="36" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/java/jdk1.8.0_151/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="2992" column="25" lean-forward="false" selection-start-line="2992" selection-start-column="25" selection-end-line="2992" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/mengyunzhi/SpringMvcStudy/controller/TeacherControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+        <state relative-caret-position="327">
+          <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.9.RELEASE/spring-data-commons-1.13.9.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="92" column="15" lean-forward="false" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.9.RELEASE/spring-data-jpa-1.11.9.RELEASE.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="92" column="16" lean-forward="false" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/service/TeacherServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding>
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1099#1100#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/service/TeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/controller/TeacherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <folding>
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1656#1657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/entity/Klass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mengyunzhi/SpringMvcStudy/entity/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-232">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding />
         </state>
       </provider>
